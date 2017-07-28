@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Baloo|Grand+Hotel|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Space+Mono" rel="stylesheet">
+
+  <title>Microservices</title>
+  
+</head>
+
+<body>
+
+<div class="row header">
+    <h1>Microservices</h1>
+    <p>A series of projects by Nizar Ismail</p>
+  </div>
+  
+  <div class="row item">
+    <h3>Timestamp</h3>
+    <form id ="timeStamp">
+      <input type="text" name="time" placeholder="Enter a date either in its UNIX format or as natural language (e.g. June 27 2017) to convert it to the other format" size="90%" />
+    </form>
+    <p>Alternatively, you could directly use <i>/time/<b>DATE</b></i> with the date in either a UNIX format or natural language (e.g. June 27 2017) to receive a JSON result providing the date in both formats.  </p>
+  </div>
+  
+    <div class="row item">
+      <a href='/whoami'>
+    <h3>WhoAmI Service</h3>
+    <p>Via <i>/whoami</i>, you can discover more about your IP address, language and operating system.</p>
+    </a>
+  </div>
+  
+    <div class="row item">
+    <h3>URL Shortener</h3>
+<form id ="toShort">
+      <input type="text" name="original" placeholder="Enter an address here e.g. http://www.google.com to receive a shorter redirecting URL" size="90%"/>
+      </form>
+      <form id="toLong">
+        <input type="text" name="short" placeholder="If you already have a short id key, place it here to be redirected" size="90%" />
+      </form>
+      <p>Alternatively, you could use <i>/short/<b>URL</b></i> (remember to include the leading http or https) to receive a <i>/u/<b>LINK</b></i> which would redirect you to the original address.</p>
+  </div>
+    
+    <div class="row item">
+    <h3>Image Search</h3>
+    <form id="imageSearch">
+      <input type="text" name="terms" placeholder="Enter some search terms here" size="50" />
+      <input type="range" min="1" max="10" value="10" name="offset" id="offset" />
+            <label>Offset <span id="offsetVal">10</span></label>
+
+      </form>
+    <p>Alternative, access the search query directly by <i>/search/<strong>TERMS</strong></i>. You can access the most recent searches via <a href="/recent"><i>/recent</i></a>. Utilises Google Custom Search Engine.</p>
+  </div>
+  
+  <div class="row item">
+    <h3>File Parser</h3>
+    <form id="fileParse" action='/file' method='post' enctype="multipart/form-data">
+      <input type="file" name="filed" />
+      <button type="submit" name="submit">Check this file's size</button>
+      
+    </form>
+    
+    
+    <p>Use this utility from this page to temporarily upload a file to determine the metadata of a file returned as a JSON string.</p>
+  </div>
+    
+    
+    
+  <div class="row footer">
+    <p>These codes were written as part of my course through FreeCodeCamp.</p>
+  </div>
+  
+  
+  
+<script src="js/script.js"></script>
+</body>
+
+
+</html>

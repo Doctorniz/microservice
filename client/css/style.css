@@ -1,0 +1,65 @@
+  h1 {
+  font-family: "Baloo", cursive;
+  line-height: 0.3;
+  padding-top: 35px;
+  font-size:2.8em;
+}
+
+h3 {
+    font-family:"Baloo"; 
+    margin-bottom:10px;
+}
+.row {
+  padding-bottom: 5px;
+  font-size:1.2em;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+      font-family: "Amatic SC", cursive;
+    margin: 20px;
+    background-color: rgba(252,252,229,0.95);
+
+
+  margin-bottom:20px;
+  text-align:center;
+  padding:10px;
+  
+}
+
+
+a {
+ text-decoration: none;
+  color: inherit;
+}
+p {
+
+}
+
+.item {
+    font-family: "Slabo 27px";
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.item p {
+    font-size: 0.9rem;
+}
+body {
+    background-image: url("https://images.pexels.com/photos/225769/pexels-photo-225769.jpeg?w=1260&h=1000&auto=compress&cs=tinysrgb");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+}
+input { 
+    text-align: center; 
+}
+
+label {
+    font-size:0.7rem;
+}
+
+i {
+    font-family:"Space Mono";
+    background-color: yellow;
+    color: black;
+}
